@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=DM+Sans:wght@400;500;700&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Ramaraja&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&family=Ramaraja&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+$font: 'Roboto Condensed', sans-serif;
+$family:'DM Sans', sans-serif;
+$lgt-grey:#fbf9ff;
+$orange:#FF8553;
+header{
+    width: 100%;
+    height:950px;
+    background-image: url(../Pictures/header.webp);
+    .banner-image{
+      margin-top: 150px;
+      padding-left: 250px;
+    }
+    .banner-content{
+        h1{
+            font-size: 70px;
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 40px;
+            font-family: $font;
+            margin-top: 200px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: 300;
+            font-family: $family;
+        }
+    }
+    
+}
+nav{
+    padding-left: 100px;
+    padding-right: 100px;
+    ul{
+        width: 400px;
+        font-family: $font;
+    }
+    li{
+        padding-left: 30px;
+    }
+    button{
+        width: 150px;
+        margin-right: 50px;
+    }
+}
+.home-banner-1{
+   .banner-part{
+    padding-left: 100px;
+   }
+   .banner-par{
+   font-size: 20px;
+   line-height: 40px;
+   margin-top: 80px;
+   font-family: $font;
+   }
+   .banner-par-1{
+    margin-left: 130px;
+   }
+   .banner-par-2{
+    margin-left: 70px;
+   }
+   .banner-paragraph{
+    font-size: 26px;
+   font-family: $font;
+   }
+   .banner-image-1{
+    padding-top: 45px;
+   }
+}
+.section-1{
+    padding: 50px;
+    h2{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        font-family: $font;
+    }
+    h5{
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        font-weight: 600;
+        font-family: $font;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 300;
+        margin-bottom: 25px;
+        color: black;
+        font-family: $family;
+    }
+    .section-part{
+        border-right:1px solid rgb(220, 213, 213);
+        border-bottom: 1px solid rgb(209, 207, 207) ;
+        height: 370px;
+    }
+    .section-part:hover{
+        box-shadow: 1px 1px 2px 1px lightgray;
+        background-color:white;
+    }
+    .section-part-1{
+        border-right: none;
+    }
+    .section-part-2{
+        border-bottom: none;
+    }
+    .section-link-1{
+        color: $orange;
+        font-size: 16px;
+       font-weight: 500px;
+       text-decoration: none;
+       position: relative;
+       &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $orange;
+       top: 28px;
+       }
+    }
+    .section-link-1:hover{
+        
+        word-spacing: 4px;
+    }
+}
+.section-2{
+    padding: 50px;
+    h2{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        font-family: $font;
+    }
+    button{
+        padding:12px 36px;
+        width: 180px;
+        border-color: $orange;
+        color: $orange;
+        font-family: $family;
+        
+    }
+    .button:hover{
+        color: white;
+        background-color: $orange;
+    }
+}
+.bck-color{
+    width: 100%;
+    position: relative;
+&::before{
+    position: absolute;
+    content: "";
+    width: 74%;
+    height: 780px;
+    background-color: #f8f8f8;
+    border-radius: 0 90px 90px 0;
+    z-index: -1;
+}
+}
+.About-sec{
+    padding:80px 0px 0px 100px;
+    h2{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        font-family: $font;
+        
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 35px;
+        padding-right: 50px;
+        font-weight: 400;
+        font-family: $family;
+    }
+    .paragraph{
+        font-size: 26px;
+        font-weight: 500;
+        color: $orange;
+        font-family: $family;
+    }
+}
+.outbox{
+    width: 500px;
+   height: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    background-color:#f7e2d9;
+    margin-top: -10px;
+   
+    .innerbox{
+    width: 60%;
+    height: 5px;
+    border-radius: 10px;
+    background-color:$orange;
+    animation:html 4s ease-in-out forwards;
+    }
+    .innerbox-2{
+        animation:text 4s ease-in-out forwards;
+    }
+    .innerbox-3{
+        animation:css 4s ease-in-out forwards;
+    }
+    @keyframes html {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    @keyframes text {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 89%;
+        }
+    }
+    @keyframes css {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 95%;
+        }
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $family;
+        span{
+            color: #FF8553;
+        }
+    }
+    
+}
+.slider{
+    padding: 100px;
+}
+.section-3{
+    padding-left: 80px;
+}
+.bck-color-1{
+        width: 100%;
+        position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 74%;
+        height: 440px;
+        right: 0;
+         
+        background-color: #f8f8f8;
+        border-radius: 90px 0px 0px 90px;
+        z-index: -1;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        font-family: $font; 
+    }
+    .zoom-image{
+        overflow: hidden;
+        position: relative;
+    }
+    .zoom-image img{
+        transition: all 1.3s ease;
+        filter: brightness(0.7);
+    }
+    .zoom-image:hover img{
+        transform: scale(1.2);
+        border-radius: 10px;
+
+    }
+    .content{
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        button{
+            padding: 5px 10px;
+            background-color: $orange;
+            color: white;
+        }
+        p{
+            font-size: 25px;
+            font-weight: 600;
+            font-family: $family;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $font;
+        }
+    }
+    }
+    .foot{
+        width: 100%;background-color: black;
+        padding: 20px 100px;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $family;
+        }
+        .foot-icon{
+            color: $orange;
+            padding: 13px;
+            background-color: #63463b;
+            border-radius: 7px;
+            margin-left: 10px;
+        }
+        button{
+            border:1px solid grey;
+            padding: 15px 32px;
+        }
+        .bton{
+            background-color: $orange;
+        }
+    }
+
+// ======================
+// ======================
+.contact-map{
+    width: 90%;
+    height: 500px;
+    margin-top: 100px;
+    padding-left: 200px;
+    object-fit: cover;
+}
+.contact-form{
+     h4{
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 20px;
+     }
+}
+.cont-form-head
+{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+.contact-colum-1{
+    margin-left: 100px;
+}
+.cont-form-head
+{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+    font-family: $font;
+    margin-left: 100px;
+}
+.cont-form-par{
+    
+    font-family: $family;
+}
+.contact-input{
+    width: 320px;
+   border: 1px solid rgb(198, 196, 196);
+}
+.contact-area{
+    padding-left: 30px;
+}
+.home-banner-btn{
+    border: 1px solid rgb(174, 172, 172);
+    font-family: $family;
+    padding: 15px 32px;
+    color: $orange;
+}
+// ======================
+.blog-header{
+    background-image: url(../Pictures/blog-banner.webp);
+    width: 100%;
+    height: 440px;
+    .blog-banner{
+        h1{
+            font-size: 70px;
+            font-weight: 400;
+            font-family: $font;
+           margin: 120px 0 0 150px;
+        }
+    }
+}
+.blog-left{
+    border: none;
+    
+    h2{
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $font;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+        font-family: $family;
+    }
+    a {
+        font-size: 14px;
+        color: gray;
+        text-decoration: none;
+    }
+}
+.blog-sec-1{
+    width: 370px;
+    height: 200px;
+    padding: 30px;
+    background-color: $lgt-grey;
+    .input-group{
+        width: 320px;
+        font-family: $font;
+        input{
+            border-radius: 0px;
+        }
+       button{
+        background-color: $orange;
+        border: $orange;
+       }
+    }
+    .blog-btn-1{
+        width:320px ;
+        border: 1px solid $orange;
+        border-radius: 0px;
+        font-family: $font;
+        word-spacing: 2px;
+    }
+        .blog-btn-1:hover{
+            background-color: $orange;
+            color: white;
+        }
+    
+}
+.blog-sec-2{
+    width: 370px;
+    height:470px;
+    background-color: $lgt-grey;
+    padding: 30px;
+    h4{
+        font-size: 20px;
+        font-family: $font;
+        border-bottom: 1px dotted rgb(176, 175, 175);
+    }
+    p{
+        border-bottom: 1px dotted rgb(176, 175, 175);
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 300;
+        font-family: $family;
+    }
+    p:hover{
+        color: $orange;
+    }
+    .blog-sec-p{
+        border: none;
+    }
+}
+.blog-sec-3{
+    width: 370px;
+    height: 550px;
+    background-color: $lgt-grey;
+    padding: 30px;
+    h4{
+        
+        font-size: 20px;
+        font-family: $font;
+        border-bottom: 1px dotted rgb(176, 175, 175);
+    }
+    h3{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 6px;
+        font-family: $font;
+        transition: all 0.3s linear;
+    }
+    p{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        font-family: $family;
+    }
+}
+.blog-sec-4{
+        width: 370px;
+        height: 252px;
+        background-color: $lgt-grey;
+        padding: 30px;
+        h4{
+            font-size: 20px;
+            font-family: $font;
+            border-bottom: 1px dotted rgb(176, 175, 175);
+        }
+        button{
+            border:1px solid rgb(181, 179, 179);
+            border-radius: 0px;
+            padding: 4px 20px;
+            font-size: 13px;
+            font-family: $family;
+            margin-bottom: 8px;
+            margin-right: 3px;
+            color: #888888;
+        }
+        button:hover{
+            color: white;
+            background-color: $orange;
+        }
+}
+.blog-sec-5{
+    width: 370px;
+    height: 370px;
+    background-color: $lgt-grey;
+    padding: 30px;
+    h4{
+        font-size: 20px;
+            font-family: $font;
+            border-bottom: 1px dotted rgb(176, 175, 175);
+    }
+}
+.blog-sec-6{
+    width: 370px;
+    height: 250px;
+    background-color: $lgt-grey;
+    padding: 30px;
+    h4{
+        font-size: 20px;
+        font-family: $font;
+        border-bottom: 1px dotted rgb(176, 175, 175);
+    }
+    input{
+        width: 320px;
+        height: 50px;
+    }
+    .blog-btn-2{
+        width:320px ;
+        border: 1px solid $orange;
+        border-radius: 0px;
+        font-family: $font;
+        word-spacing: 2px;
+    }
+        .blog-btn-2:hover{
+            background-color: $orange;
+            color: white;
+        }
+    
+    }
+
